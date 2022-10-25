@@ -17,8 +17,8 @@ The purpose of this application is to convert a text into Morse code and, if des
 
 ### Screenshot
 
-![Image text](img/screen1.jpg)
-![Image text](img/screen2.jpg)
+![Image text](screenshots/screen1.jpg)
+![Image text](screenshots/screen2.jpg)
 
 ### How it works
 
