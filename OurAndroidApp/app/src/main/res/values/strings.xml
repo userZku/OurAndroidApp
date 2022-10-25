@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">OurAndroidApp</string>
+    <string name="app_name">MorseTextConverter</string>
+    <string name="hint1"><small><i>Enter your text to convert</i></small></string>
+    <string name="hint2"><small><i>Your morse code will appear here</i></small></string>
+    <string name="clearBtn">Clear</string>
+    <string name="toMorse">To Morse</string>
+    <string name="morseToLS">Morse To Light/Sound</string>
+    <string name="stopLS">Stop Light/Sound</string>
+    <string name="Light">Light</string>
+    <string name="Sound">Sound</string>
 </resources>

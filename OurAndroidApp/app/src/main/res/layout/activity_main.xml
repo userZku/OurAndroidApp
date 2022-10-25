@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <EditText
@@ -12,8 +13,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:hint="enter text to convert"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/hint1"
+        android:textColor="@color/white"
         android:autofillHints=""
+        android:textColorHint="@color/white"
         android:inputType="" />
 
     <LinearLayout
@@ -28,17 +32,25 @@
         <Button
             android:id="@+id/clearBtn"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
             android:layout_marginEnd="15dp"
-            android:text="Clear" />
+            android:background="@drawable/custom_button"
+            android:text="@string/clearBtn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/toMorseBtn"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="To Morse" />
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/toMorse"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -47,19 +59,65 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"
+        android:textSize="24sp"
+        android:hint="@string/hint2"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:gravity="center"
         android:layout_below="@id/ctrls"
         android:layout_marginTop="50dp"
         />
 
-    <Button
-        android:id="@+id/morseToLightBtn"
-        style="@style/Widget.AppCompat.Button"
+    <Switch
+        android:id="@+id/switchLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/morseResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/Light"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switchSound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Morse To Light"
-        android:layout_below="@id/morseResult"
-        android:layout_marginTop="50dp"/>
+        android:layout_below="@id/switchLight"
+        android:layout_marginTop="20dp"
+        android:text="@string/Sound"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/morseToLSBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/switchSound"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/morseToLS"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/stopLSBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/morseToLSBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/stopLS"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
 
 </RelativeLayout>
