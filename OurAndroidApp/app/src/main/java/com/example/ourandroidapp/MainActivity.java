@@ -280,5 +280,4 @@ public class MainActivity extends AppCompatActivity {
             stopThread=true;
         }
     }
-
 }
