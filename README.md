@@ -19,8 +19,10 @@ The purpose of this application is to convert a text into Morse code and, if des
 
 ---
 
-<img src="screenshots/screen1.jpg" alt="Image" width="200"/>
-<img src="screenshots/screen2.jpg" alt="Image" width="200"/>
+<p float="left">
+    <img src="screenshots/screen1.jpg" alt="Image" width="300"/>
+    <img src="screenshots/screen2.jpg" alt="Image" width="300"/>
+</p>
 
 ### How it works
 
